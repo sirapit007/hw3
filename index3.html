@@ -103,28 +103,65 @@
           </div>
       </div>
       
+      <body style="padding: 1em">
       <div class="box-footer bg-red">
-        <div class="row">
-          <div class="col-sm-6 border-right">
-            <div class="description-block">
-                <p align="center">Subject : </p>
-                <p align="center">Name : </p>
-                <p align="center">Massage : </p>
-                <p align="center">Telephone number : </p>
-                <p align="center">E-mail : </p>
-            </div>
+        <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+                  <div class="card border-info mb-3">
+                      <hr/>
+                      <div class="card-body">
+                        <form action="" name="myForm">
+                              <div class="form-group">
+                                  <label for="">Enter Firstname</label>
+                                  <input type="text" id="firstname" class="form-control" placeholder="Firstname...">
+                              </div>
+                              <div class="form-group">
+                                <label for="">Enter Lastname</label>
+                                <input type="text" id="lastname" class="form-control" placeholder="Lastname...">
+                            </div>
+                            <div class="form-group">
+                              <label for="">Enter Email</label>
+                              <input type="text" id="email" class="form-control" placeholder="Email...">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Massage</label>
+                            <input type="text" id="massage" class="form-control" placeholder="Massage...">
+                        </div>
+                              
+                          </form>
+                          <button class="btn btn-primary btn-flat">Submit</button>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-12">
+                  <div class="card text-white bg-dark mb-3">
+                      <div class="card-header">
+                          <hr/>
+                          <h3 class="card-title">Result</h3>
+                      </div>
+                      <div class="card-body">
+                          <table class="table text-white">
+                              <thead>
+                                  <tr>
+                                      <th>Firstname</th>
+                                      <th>Lastname</th>
+                                      <th>Email</th>
+                                      <th>Massage</th>
+                                  </tr>
+                              </thead>
+                              <tbody>
+                                 
+                              </tbody>
+                          </table>
+                          <table class="table footer"></table>
+                          <h4></h4>
+                      </div>
+                  </div>
+              </div>
+  
           </div>
-          <div class="col-sm-6">
-            <div class="description-block">
-                <p><input type="text" style="background-color: lightcoral;"></p>
-                <p><input type="text" style="background-color: lightcoral;"></p>
-                <p><input type="text" style="background-color: lightcoral;"></p>
-                <p><input type="text" style="background-color: lightcoral;"></p>
-                <p><input type="text" style="background-color: lightcoral;"></p>
-                <p><a href="index3.html"><input type="submit"></a></p>
-            </div>
-          </div>
-        </div>
+      </div>
       </div>
 
           </section>
@@ -349,6 +386,25 @@
       $('.sidebar-menu').tree()
     })
   </script>
+  <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+    
+  <script src="contact.js"></script>
 </body>
 </html>
